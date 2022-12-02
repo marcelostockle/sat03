@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { AiOutlineBars } from 'react-icons/ai'
 import './sidebar.css'
+import NestedList from './NestedList'
+import content from './sidebar.json'
 
 const Sidebar = () => {
   const [visible, setVisible] = useState(false)
@@ -13,17 +15,7 @@ const Sidebar = () => {
       className='menu-toggle'
       onClick={() => setVisible(!visible)}
     />
-    <ul className='sidebar-list' style={{ display: visibleStyle(visible) }}>
-      <li className='sidebar-list-item'>
-        Testing
-      </li>
-      <li className='sidebar-list-item'>
-        Testing
-      </li>
-      <li className='sidebar-list-item'>
-        Testing
-      </li>
-    </ul>
+    <NestedList content={content} level={0} display={visible}/>
   </div>
 }
 

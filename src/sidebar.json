@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Testing"
+  },
+  {
+    "title": "Another test",
+    "child": [
+      {
+        "title": "Nested item A"
+      },
+      {
+        "title": "Nested item B"
+      },
+      {
+        "title": "Nested item C"
+      }
+    ]
+  },
+  {
+    "title": "Historias",
+    "link": "/historias"
+  },
+  {
+    "title": "Acerca de",
+    "link": "/acercade"
+  }
+]
