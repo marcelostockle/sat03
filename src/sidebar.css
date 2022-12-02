@@ -1,0 +1,23 @@
+.menu-toggle {
+  margin: 10px 0 0 10px;
+}
+.sidebar {
+  display: grid;
+  border-style: solid;
+}
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
+  padding-inline-start: 0;
+  padding-inline-end: 3px;
+  list-style-type: none;
+}
+.sidebar-list-item {
+  background-color: bisque;
+  margin-bottom: 1px;
+}
+.nested-list-1 {
+  margin-left: 10px;
+}
