@@ -8,7 +8,7 @@ const NestedList = (props) => {
   const linkWrapper = (content, link) => {
     return link ? <a href={link}>{content}</a> : content
   }
-  const {setModal, openModal} = useModalContext()
+  const {setModal} = useModalContext()
   return (<ul className='sidebar-list'
     style={{
       display: visibleStyle(props.display),
@@ -24,7 +24,11 @@ const NestedList = (props) => {
             if (!content.link) {
               setVisible(visible.map((v, set_i) => set_i === i ? !v : v))
               if (content.modal) {
-                setModal({pic: content.modal.pic, text: content.modal.text, active: true})
+                setModal({
+                  pic: content.modal.pic,
+                  text: content.modal.text,
+                  title: content.title,
+                  active: true})
               }
             }
           }}
