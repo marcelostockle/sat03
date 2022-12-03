@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useModalContext } from './ModalContext'
 import './sidebar.css'
 
 const NestedList = (props) => {
@@ -7,7 +8,7 @@ const NestedList = (props) => {
   const linkWrapper = (content, link) => {
     return link ? <a href={link}>{content}</a> : content
   }
-
+  const {setModal, openModal} = useModalContext()
   return (<ul className='sidebar-list'
     style={{
       display: visibleStyle(props.display),
@@ -17,12 +18,14 @@ const NestedList = (props) => {
     {props.content.map((content, i) => {
       return linkWrapper(
         <li
-          key={`sidebaritem-${props.level}-${i}`}
           className='sidebar-list-item'
           onClick={(event)=> {
             event.stopPropagation()
             if (!content.link) {
               setVisible(visible.map((v, set_i) => set_i === i ? !v : v))
+              if (content.modal) {
+                setModal({pic: content.modal.pic, text: content.modal.text, active: true})
+              }
             }
           }}
         >

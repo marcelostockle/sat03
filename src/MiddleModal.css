@@ -1,0 +1,33 @@
+.parent-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40vw;
+  height: 70vh;
+}
+.modal-container {
+  width: inherit;
+  background-color: darksalmon;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding-inline: 8%;
+  padding-top: 35px;
+  border-style: groove;
+  border-width: 4px;
+  border-radius: 6px;
+  border-color: white;
+}
+.close-btn {
+  color: darkred;
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
