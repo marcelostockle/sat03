@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom";
 import './sidebar.css'
 
 const NestedList = (props) => {
-  const navigate = useNavigate()
   const [visible, setVisible] = useState(Array(props.content.length).fill(false))
   const visibleStyle = (b) => b ? 'flex' : 'none'
+  const linkWrapper = (content, link) => {
+    return link ? <a href={link}>{content}</a> : content
+  }
 
   return (<ul className='sidebar-list'
     style={{
@@ -14,14 +15,13 @@ const NestedList = (props) => {
     }}
   >
     {props.content.map((content, i) => {
-      return (<li
+      return linkWrapper(
+        <li
           key={`sidebaritem-${props.level}-${i}`}
           className='sidebar-list-item'
           onClick={(event)=> {
             event.stopPropagation()
-            if (content.link) {
-              navigate(content.link)
-            } else {
+            if (!content.link) {
               setVisible(visible.map((v, set_i) => set_i === i ? !v : v))
             }
           }}
@@ -31,7 +31,8 @@ const NestedList = (props) => {
           ? <NestedList content={content.child} level={props.level+1} display={visible[i]}/> 
           : ""
         }
-      </li>)
+      </li>
+      , content.link)
     })}
   </ul>)
 }

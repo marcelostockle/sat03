@@ -1,24 +1,60 @@
 [
   {
-    "title": "Testing"
+    "title": "Océano Profundo"
   },
   {
-    "title": "Another test",
+    "title": "Diversidad",
     "child": [
       {
-        "title": "Nested item A"
+        "title": "OBIS"
       },
       {
-        "title": "Nested item B"
+        "title": "gbif"
       },
       {
-        "title": "Nested item C"
+        "title": "SONNE",
+        "child": [
+          {
+            "title": "Diversidad Conocida"
+          },
+          {
+            "title": "Diversidad Desconocida"
+          }
+        ]
+      },
+      {
+        "title": "HADAL"
+      },
+      {
+        "title": "ATACAMEX"
       }
     ]
   },
   {
     "title": "Historias",
     "link": "/historias"
+  },
+  {
+    "title": "Juegos",
+    "child": [
+      {
+        "title": "Desafío Hadal",
+        "link": "https://www.audaciagame.cl/"
+      },
+      {
+        "title": "Puzzle"
+      },
+      {
+        "title": "Crucigrama"
+      },
+      {
+        "title": "Colgado"
+      }
+    ]
+  },
+  {
+    "title": "Compras",
+    "link": "/productos"
   },
   {
     "title": "Acerca de",
