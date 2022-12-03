@@ -11,7 +11,6 @@ const HomePage = () => {
         <div className='left-div'>
           <Sidebar/>
         </div>
-        <OceanChart/>
         <MiddleModal/>
       </div>
     </ModalProvider>

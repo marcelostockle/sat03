@@ -4,6 +4,9 @@
 .container {
   display: grid;
   width: inherit;
+  height: 100vh;
+  background-image: url(/fosa.jpg);
+  background-repeat: round;
 }
 .left-div {
   position: absolute;
