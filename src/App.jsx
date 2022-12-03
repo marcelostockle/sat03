@@ -3,6 +3,7 @@ import HomePage from './HomePage'
 import StoriesPage from './StoriesPage'
 import StorePage from './StorePage'
 import AboutPage from './AboutPage'
+import './index.css'
 
 function App() {
   return <Router>
