@@ -1,0 +1,23 @@
+.ocean-chart {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-img {
+  height: 100vh;
+}
+.firmamento {
+  position: absolute;
+  background-color: aqua;
+  height: 10vh;
+  width: 100%;
+  z-index: -1;
+}
+.abyss {
+  position: absolute;
+  background-image: linear-gradient(blueviolet, black);
+  top: 10vh;
+  height: 90vh;
+  width: 100%;
+  z-index: -1;
+}

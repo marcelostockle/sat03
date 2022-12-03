@@ -3,7 +3,6 @@
 }
 .sidebar {
   display: grid;
-  border-style: solid;
 }
 .sidebar-list {
   display: flex;
@@ -16,5 +15,7 @@
 }
 .sidebar-list-item {
   background-color: bisque;
-  margin-bottom: 1px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:gray;
 }
