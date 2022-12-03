@@ -6,10 +6,8 @@ import content from './sidebar.json'
 
 const Sidebar = () => {
   const [visible, setVisible] = useState(false)
-  const visibleStyle = (b) => b ? 'flex' : 'none'
-  const visibleBackground = (b) => b ? 'grey' : 'transparent'
 
-  return <div className='sidebar' style={{ backgroundColor: visibleBackground(visible)}}>
+  return <div className='sidebar'>
     <AiOutlineBars
       size='2em'
       className='menu-toggle'

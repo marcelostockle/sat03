@@ -10,7 +10,7 @@ const MiddleModal = () => {
       <AiFillCloseSquare className='close-btn' size={'2em'} onClick={() => closeModal()}/>
       <div className='modal-container'>
         <img src={modal.pic}/>
-        <p>{modal.text}</p>
+        <p style={{textAlign: 'justify'}}>{modal.text}</p>
       </div>
     </div>
   )
