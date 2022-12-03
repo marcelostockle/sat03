@@ -10,10 +10,18 @@
     "title": "Diversidad",
     "child": [
       {
-        "title": "OBIS"
+        "title": "OBIS",
+        "modal": {
+          "pic": "/OBIS.jpg",
+          "text": "Es el Sistema de Información sobre Biodiversidad Oceánica, es un repositorio de información sobre la distribución y abundancia de especies vivas en el océano. Es un centro mundial de intercambio de información y datos, de acceso abierto sobre biodiversidad marina para la ciencia, la conservación y el desarrollo sostenible."
+        }
       },
       {
-        "title": "gbif"
+        "title": "gbif",
+        "modal": {
+          "pic": "/GBIF-Logo.png",
+          "text": "Infraestructura Mundial de Información en Biodiversidad, es una organización internacional y una red de datos financiada por gobiernos de todo el mundo, destinada a proporcionar a cualquier persona, en cualquier lugar, acceso abierto y gratuito a datos sobre cualquier tipo de forma de vida que hay en la Tierra."
+        }
       },
       {
         "title": "SONNE",
