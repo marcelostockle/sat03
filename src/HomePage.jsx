@@ -12,9 +12,9 @@ const HomePage = () => {
           <h1 style={{fontSize:'xx-large'}}>
             Conservación de la diversidad desconocida en el océano profundo
           </h1>
-          <h3 style={{color:'white'}}>95% Biosfera global</h3>
-          <h3 style={{color:'white'}}>5% Explorado</h3>
-          <h3 style={{color:'white'}}>1% Diversidad identificada</h3>
+          <h3 style={{color:'white'}}>&gt;95% Biosfera global</h3>
+          <h3 style={{color:'white'}}>&lt;5% Explorado</h3>
+          <h3 style={{color:'white'}}>&lt;1% Diversidad identificada</h3>
         </div>
         <div className='left-div'>
           <Sidebar/>
