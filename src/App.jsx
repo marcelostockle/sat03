@@ -4,7 +4,6 @@ import StoriesPage from './StoriesPage'
 import StorePage from './StorePage'
 import AboutPage from './AboutPage'
 import './index.css'
-import { useEffect } from 'react';
 
 function App() {
   return <Router>
