@@ -5,9 +5,8 @@ import plotdata from './assets/plot.json'
 const PlotTab = () => {
   const [station, setStation] = useState("2")
   const [species, setSpecies] = useState('Lanceola sayana')
+  const data_instance = plotdata.find(row => row.species === species && row.station === station)
   const plot = () => {
-    const data_instance = plotdata.find(row => row.species === species && row.station === station)
-    console.log(data_instance)
     if (data_instance) {
       return <ResponsiveContainer height='100%'>
           <ScatterChart>
@@ -17,6 +16,19 @@ const PlotTab = () => {
             <Scatter data={data_instance.plot} dataKey='y' fill="#8884d8" line shape='circle'/>
           </ScatterChart>
         </ResponsiveContainer>
+    } else {
+      return <h3>Instance Not Found</h3>
+    }
+  }
+  const speciesStatus = (status) => {
+    if (status) {
+      if (status === 1) {
+        return <h4 style={{color:'green'}}>Sin peligro</h4>
+      } else if (status === 2) {
+        return <h4 style={{color:'orange'}}>Vulnerable</h4>
+      } else {
+        return <h4 style={{color:'red'}}>En peligro</h4>
+      }
     } else {
       return <h3>Instance Not Found</h3>
     }
@@ -31,41 +43,11 @@ const PlotTab = () => {
       </select>
     </span>
     <span>
-      Phylum:
-      <select disabled>
-        <option>Inabilitado</option>
-      </select>
-    </span>
-    <span>
-      Clase:
-      <select disabled>
-        <option>Inabilitado</option>
-      </select>
-    </span>
-    <span>
-      Orden:
-      <select disabled>
-        <option>Inabilitado</option>
-      </select>
-    </span>
-    <span>
-      Familia:
-      <select disabled>
-        <option>Inabilitado</option>
-      </select>
-    </span>
-    <span>
-      Género:
-      <select disabled>
-        <option>Inabilitado</option>
-      </select>
-    </span>
-    <span>
       Especie:
       <select name="sel-species" onChange={(event) => setSpecies(event.target.value)}>
         <option value="Lanceola sayana">Lanceola sayana</option>
         <option value="Bathylagus pacificus">Bathylagus pacificus</option>
-        <option value="Subeucanalus monachus">Subeucanalus monachus</option>
+        <option value="Subeucalanus monachus">Subeucalanus monachus</option>
         <option value="Melamphaes typhlops">Melamphaes typhlops</option>
         <option value="Paramollicia major">Paramollicia major</option>
         <option value="Pseudosagitta maxima">Pseudosagitta maxima</option>
@@ -74,6 +56,9 @@ const PlotTab = () => {
         <option value="Bentheogennema corbariae">Bentheogennema corbariae</option>
         <option value="Edwardsia longicornis">Edwardsia longicornis</option>
       </select>
+    </span>
+    <span>
+      Estado de conservación: {speciesStatus(data_instance.danger)}
     </span>
     {plot()}
   </>)

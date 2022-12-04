@@ -24,6 +24,15 @@ const HomePage = () => {
           <img src='Escudo-UdeC_300x233.png'/>
           <img src='imo.png'/>
         </div>
+        <img
+          src="ninosimbolo.png"
+          style={{
+            position: "absolute",
+            right: "10vw",
+            bottom: "30vh",
+            maxWidth: "150px"
+          }}
+        />
       </div>
     </ModalProvider>
 }
