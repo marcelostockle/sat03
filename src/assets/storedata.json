@@ -1,0 +1,22 @@
+[
+  {
+    "pic": "8.jpg",
+    "title": "Taza decorativa A",
+    "price": "$15.000"
+  },
+  {
+    "pic": "9.jpg",
+    "title": "Taza decorativa B",
+    "price": "$12.000"
+  },
+  {
+    "pic": "10.jpg",
+    "title": "Bolso de mano A",
+    "price": "$6.000"
+  },
+  {
+    "pic": "11.jpg",
+    "title": "Bolso de mano B",
+    "price": "$6.000"
+  }
+]

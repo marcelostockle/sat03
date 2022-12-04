@@ -5,6 +5,7 @@ import './home.css'
 import MiddleModal from './MiddleModal'
 
 const HomePage = () => {
+  useEffect(() => { document.title='Oceano Profundo' }, [])
   return <ModalProvider>
       <div className='container'>
         <div className='home-title'>
