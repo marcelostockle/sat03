@@ -1,0 +1,95 @@
+[
+  {
+    "species": "Lanceola sayana",
+    "station": "2",
+    "phylum": "Arthropoda",
+    "class": "Malacostraca",
+    "order": "Amphipoda",
+    "family": "Lanceolidae",
+    "genre": "Lanceola",
+    "plot": [
+      {"x": 0, "y": 43.6271630779434},
+      {"x": 1000, "y": 964},
+      {"x": 2000, "y": 765.62522494122},
+      {"x": 3000, "y": 297.744609471147},
+      {"x": 4000, "y": 27780.183672837}
+    ]
+  },
+  {
+    "species": "Lanceola sayana",
+    "station": "4",
+    "phylum": "Arthropoda",
+    "class": "Malacostraca",
+    "order": "Amphipoda",
+    "family": "Lanceolidae",
+    "genre": "Lanceola",
+    "plot": [
+      {"x": 1000, "y": 78.2994690315675},
+      {"x": 2000, "y": 102.85577363298},
+      {"x": 3000, "y": 29357.5161506408},
+      {"x": 4000, "y": 30.3262231682456}
+    ]
+  },
+  {
+    "species": "Bathylagus pacificus",
+    "station": "2",
+    "phylum": "",
+    "class": "",
+    "order": "",
+    "family": "",
+    "genre": "",
+    "plot": [
+      {"x": 0, "y": 281.026920605973},
+      {"x": 1000, "y": 8},
+      {"x": 2000, "y": 257.123668413655},
+      {"x": 3000, "y": 98.6336631994201},
+      {"x": 4000, "y": 157.229699497406}
+    ]
+  },			
+  {
+    "species": "Bathylagus pacificus",
+    "station": "4",
+    "phylum": "",
+    "class": "",
+    "order": "",
+    "family": "",
+    "genre": "",
+    "plot": [
+      {"x": 1000, "y": 19.381056690982},
+      {"x": 2000, "y": 7194.46204988355},
+      {"x": 3000, "y": 145.432900219676},
+      {"x": 4000, "y": 46189.2967681976}
+    ]
+  },
+  {
+    "species": "Subeucalanus monachus",
+    "station": "2",
+    "phylum": "",
+    "class": "",
+    "order": "",
+    "family": "",
+    "genre": "",
+    "plot": [
+      {"x": 0, "y": 11191.7837958262},
+      {"x": 1000, "y": 248},
+      {"x": 2000, "y": 1027.53704360466},
+      {"x": 3000, "y": 466.435827840248},
+      {"x": 4000, "y": 13929.0604041819}
+    ]
+  },			
+  {
+    "species": "Subeucalanus monachus",
+    "station": "4",
+    "phylum": "",
+    "class": "",
+    "order": "",
+    "family": "",
+    "genre": "",
+    "plot": [
+      {"x": 1000, "y": 17249.140454974},
+      {"x": 2000, "y": 2048.40810557955},
+      {"x": 3000, "y": 1243.72061706382},
+      {"x": 4000, "y": 949.948450053963}
+    ]
+  }
+]

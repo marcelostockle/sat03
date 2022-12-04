@@ -28,6 +28,7 @@ const NestedList = (props) => {
                   pic: content.modal.pic,
                   text: content.modal.text,
                   title: content.title,
+                  data: content.modal.data,
                   active: true})
               }
             }

@@ -12,19 +12,24 @@
       {
         "title": "OBIS",
         "modal": {
-          "pic": "/OBIS.jpg",
+          "pic": "obis2.jpg",
           "text": "Es el Sistema de Información sobre Biodiversidad Oceánica, es un repositorio de información sobre la distribución y abundancia de especies vivas en el océano. Es un centro mundial de intercambio de información y datos, de acceso abierto sobre biodiversidad marina para la ciencia, la conservación y el desarrollo sostenible."
         }
       },
       {
         "title": "gbif",
         "modal": {
-          "pic": "/GBIF-Logo.png",
+          "pic": "obis2.jpg",
           "text": "Infraestructura Mundial de Información en Biodiversidad, es una organización internacional y una red de datos financiada por gobiernos de todo el mundo, destinada a proporcionar a cualquier persona, en cualquier lugar, acceso abierto y gratuito a datos sobre cualquier tipo de forma de vida que hay en la Tierra."
         }
       },
       {
         "title": "SONNE",
+        "modal": {
+          "data": "plot.json",
+          "pic": "mapa.jpg",
+          "text": "Las muestras fueron recolectadas entre el 2 de febrero y el 21 de marzo durante el verano de 2018 frente a la costa norte de Chile a bordo del RV alemán Sonne (crucero So261). Las estaciones se ubicaron sobre la Fosa de Atacama (Sitios 2 y 4) frente a la región de Antofagasta, entre 21º 47' S y 23º 21' S."
+        },
         "child": [
           {
             "title": "Diversidad Conocida"
@@ -45,8 +50,98 @@
         "title": "ATACAMEX"
       }
     ]
-  },{
-    "title": "Análisis"
+  },
+  {
+    "title": "Ambiental",
+    "child": [
+      {
+        "title": "Temperatura",
+        "modal": {
+          "pic": "temperatura.png",
+          "text": ""
+        }
+      },
+      {
+        "title": "Oxigeno",
+        "modal": {
+          "pic": "oxigeno.png",
+          "text": ""
+        }
+      },
+      {
+        "title": "Salinidad",
+        "modal": {
+          "pic": "salinidad.png",
+          "text": ""
+        }
+      },
+      {
+        "title": "Densidad",
+        "modal": {
+          "pic": "densidad.png",
+          "text": ""
+        }
+      },
+      {
+        "title": "Repositorio",
+        "child": [
+          {
+            "title": "COPERNICUS",
+            "link": "https://www.copernicus.eu/en"
+          },
+          {
+            "title": "Bio-Oracle",
+            "link": "https://www.bio-oracle.org/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Análisis",
+    "child": [
+      {
+        "title": "PCoA",
+        "modal": {
+          "pic": "PCO.jpg",
+          "text": ""
+        }
+      },
+      {
+        "title": "SIMPROF"
+      },
+      {
+        "title": "DistLM"
+      },
+      {
+        "title": "ANOSIM"
+      },
+      {
+        "title": "CLUSTER"
+      },
+      {
+        "title": "NMDS"
+      },
+      {
+        "title": "GAM",
+        "modal": {
+          "pic": "gam.jpg",
+          "text": ""
+        }
+      },
+      {
+        "title": "GLM"
+      },
+      {
+        "title": "Regresión"
+      },
+      {
+        "title": "PERMANOVA"
+      },
+      {
+        "title": "ANOVA"
+      }
+    ]
   },
   {
     "title": "Galería",

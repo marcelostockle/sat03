@@ -15,3 +15,22 @@
   width: 22vw;
   min-width: 300px;
 }
+.home-title {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  color: darkblue;
+  text-align: center;
+  width: 40vw;
+  word-wrap: normal;
+  font-size: large;
+}
+.logos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+}
